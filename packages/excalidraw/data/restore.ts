@@ -58,8 +58,8 @@ import {
   getNormalizedGridStep,
   getNormalizedZoom,
 } from "../scene";
-import type { LocalPoint, Radians } from "../../packages/math";
-import { isFiniteNumber, pointFrom } from "../../packages/math";
+import type { LocalPoint, Radians } from "../../math";
+import { isFiniteNumber, pointFrom } from "../../math";
 import { detectLineHeight } from "../element/textMeasurements";
 import {
   updateElbowArrowPoints,
