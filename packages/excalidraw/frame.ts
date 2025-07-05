@@ -32,7 +32,7 @@ import {
 } from "@excalidraw/utils";
 import { isFrameElement, isFrameLikeElement } from "./element/typeChecks";
 import type { ReadonlySetLike } from "./utility-types";
-import { isPointWithinBounds, pointFrom } from "@excalidraw/math";
+import { isPointWithinBounds, pointFrom } from "../math";
 
 // --------------------------- Frame State ------------------------------------
 export const bindElementsToFramesAfterDuplication = (

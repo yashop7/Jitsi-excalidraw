@@ -1,4 +1,4 @@
-import { clamp, round } from "@excalidraw/math";
+import { clamp, round } from "../../../packages/math";
 import { MAX_ZOOM, MIN_ZOOM } from "../constants";
 import type { NormalizedZoomValue } from "../types";
 

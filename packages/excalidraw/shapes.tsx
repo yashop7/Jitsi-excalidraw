@@ -7,7 +7,7 @@ import {
   pointsEqual,
   type GlobalPoint,
   type LocalPoint,
-} from "@excalidraw/math";
+} from "../math";
 import {
   getClosedCurveShape,
   getCurvePathOps,

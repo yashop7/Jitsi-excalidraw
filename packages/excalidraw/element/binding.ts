@@ -57,7 +57,7 @@ import {
   vectorToHeading,
   type Heading,
 } from "./heading";
-import type { LocalPoint, Radians } from "@excalidraw/math";
+import type { LocalPoint, Radians } from "../../math";
 import {
   lineSegment,
   pointFrom,
@@ -75,7 +75,7 @@ import {
   lineSegmentIntersectionPoints,
   round,
   PRECISION,
-} from "@excalidraw/math";
+} from "../../math";
 import { intersectElementWithLineSegment } from "./collision";
 import { distanceToBindableElement } from "./distance";
 

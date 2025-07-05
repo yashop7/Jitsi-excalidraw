@@ -53,7 +53,7 @@ import { randomId } from "../random";
 import { syncInvalidIndices } from "../fractionalIndex";
 import { getLineHeight } from "../fonts";
 import { isArrowElement } from "../element/typeChecks";
-import { pointFrom, type LocalPoint } from "@excalidraw/math";
+import { pointFrom, type LocalPoint } from "../../../packages/math";
 import { measureText, normalizeText } from "../element/textMeasurements";
 
 export type ValidLinearElement = {

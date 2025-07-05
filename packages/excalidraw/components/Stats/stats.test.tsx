@@ -24,8 +24,8 @@ import { getCommonBounds, isTextElement } from "../../element";
 import { API } from "../../tests/helpers/api";
 import { actionGroup } from "../../actions";
 import { isInGroup } from "../../groups";
-import type { Degrees } from "@excalidraw/math";
-import { degreesToRadians, pointFrom, pointRotateRads } from "@excalidraw/math";
+import type { Degrees } from "../../../math";
+import { degreesToRadians, pointFrom, pointRotateRads } from "../../../math";
 
 const { h } = window;
 const mouse = new Pointer("mouse");

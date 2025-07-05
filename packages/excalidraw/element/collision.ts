@@ -25,7 +25,7 @@ import type {
   LocalPoint,
   Polygon,
   Radians,
-} from "@excalidraw/math";
+} from "../../math";
 import {
   curveIntersectLineSegment,
   isPointWithinBounds,
@@ -35,11 +35,11 @@ import {
   pointFrom,
   pointRotateRads,
   pointsEqual,
-} from "@excalidraw/math";
+} from "../../math";
 import {
   ellipse,
   ellipseLineIntersectionPoints,
-} from "@excalidraw/math/ellipse";
+} from "../../math/ellipse";
 import {
   deconstructDiamondElement,
   deconstructRectanguloidElement,

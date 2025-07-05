@@ -30,7 +30,7 @@ import type {
   LineSegment,
   LocalPoint,
   Radians,
-} from "@excalidraw/math";
+} from "../../math";
 import {
   degreesToRadians,
   lineSegment,
@@ -38,7 +38,7 @@ import {
   pointDistance,
   pointFromArray,
   pointRotateRads,
-} from "@excalidraw/math";
+} from "../../math";
 import type { Mutable } from "../utility-types";
 import { getCurvePathOps } from "@excalidraw/utils/geometry/shape";
 

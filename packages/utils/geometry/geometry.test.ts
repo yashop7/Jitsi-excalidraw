@@ -3,7 +3,7 @@ import type {
   LineSegment,
   Polygon,
   Radians,
-} from "@excalidraw/math";
+} from "../../math";
 import {
   pointFrom,
   lineSegment,
@@ -12,7 +12,7 @@ import {
   pointOnPolygon,
   polygonIncludesPoint,
   segmentsIntersectAt,
-} from "@excalidraw/math";
+} from "../../math";
 import { pointInEllipse, pointOnEllipse, type Ellipse } from "./shape";
 
 describe("point and line", () => {

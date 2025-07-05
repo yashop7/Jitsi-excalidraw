@@ -14,13 +14,13 @@ import {
 import type { Bounds } from "@excalidraw/excalidraw/element/bounds";
 import { getElementBounds } from "@excalidraw/excalidraw/element/bounds";
 import { arrayToMap } from "@excalidraw/excalidraw/utils";
-import type { LocalPoint } from "@excalidraw/math";
+import type { LocalPoint } from "../math";
 import {
   rangeIncludesValue,
   pointFrom,
   pointRotateRads,
   rangeInclusive,
-} from "@excalidraw/math";
+} from "../math";
 
 type Element = NonDeletedExcalidrawElement;
 type Elements = readonly NonDeletedExcalidrawElement[];

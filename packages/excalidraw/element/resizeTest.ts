@@ -21,13 +21,13 @@ import type { Bounds } from "./bounds";
 import { getElementAbsoluteCoords } from "./bounds";
 import { SIDE_RESIZING_THRESHOLD } from "../constants";
 import { isImageElement, isLinearElement } from "./typeChecks";
-import type { GlobalPoint, LineSegment, LocalPoint } from "@excalidraw/math";
+import type { GlobalPoint, LineSegment, LocalPoint } from "../../math";
 import {
   pointFrom,
   pointOnLineSegment,
   pointRotateRads,
   type Radians,
-} from "@excalidraw/math";
+} from "../../math";
 
 const isInsideTransformHandle = (
   transformHandle: TransformHandle,

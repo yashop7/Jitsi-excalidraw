@@ -83,7 +83,7 @@ import {
   type GlobalPoint,
   type LocalPoint,
   type Radians,
-} from "@excalidraw/math";
+} from "../../math";
 import { getCornerRadius } from "../shapes";
 
 const renderElbowArrowMidPointHighlight = (

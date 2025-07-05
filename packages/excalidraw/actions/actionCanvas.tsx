@@ -38,7 +38,7 @@ import { DEFAULT_CANVAS_BACKGROUND_PICKS } from "../colors";
 import type { SceneBounds } from "../element/bounds";
 import { setCursor } from "../cursor";
 import { CaptureUpdateAction } from "../store";
-import { clamp, roundToStep } from "@excalidraw/math";
+import { clamp, roundToStep } from "../../../packages/math";
 
 export const actionChangeViewBackgroundColor = register({
   name: "changeViewBackgroundColor",

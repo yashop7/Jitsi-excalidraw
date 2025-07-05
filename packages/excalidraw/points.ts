@@ -2,7 +2,7 @@ import {
   pointFromPair,
   type GlobalPoint,
   type LocalPoint,
-} from "@excalidraw/math";
+} from "../math";
 
 export const getSizeFromPoints = (
   points: readonly (GlobalPoint | LocalPoint)[],

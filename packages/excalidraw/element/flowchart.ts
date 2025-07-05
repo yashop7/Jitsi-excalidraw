@@ -30,7 +30,7 @@ import {
   isFlowchartNodeElement,
 } from "./typeChecks";
 import { invariant, toBrandedType } from "../utils";
-import { pointFrom, type LocalPoint } from "@excalidraw/math";
+import { pointFrom, type LocalPoint } from "../../math";
 import { aabbForElement } from "../shapes";
 import { updateElbowArrowPoints } from "./elbowArrow";
 

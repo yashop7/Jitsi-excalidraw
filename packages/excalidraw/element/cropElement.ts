@@ -12,7 +12,7 @@ import {
   pointFromVector,
   clamp,
   isCloseTo,
-} from "@excalidraw/math";
+} from "../../math";
 import type { TransformHandleType } from "./transformHandles";
 import type {
   ElementsMap,

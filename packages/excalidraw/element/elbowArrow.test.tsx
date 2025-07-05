@@ -18,8 +18,8 @@ import type {
 } from "./types";
 import { ARROW_TYPE } from "../constants";
 import "../../utils/test-utils";
-import type { LocalPoint } from "@excalidraw/math";
-import { pointFrom } from "@excalidraw/math";
+import type { LocalPoint } from "../../math";
+import { pointFrom } from "../../math";
 import { actionDuplicateSelection } from "../actions/actionDuplicateSelection";
 import { actionSelectAll } from "../actions";
 

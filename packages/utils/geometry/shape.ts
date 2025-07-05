@@ -12,7 +12,7 @@
  * to pure shapes
  */
 
-import type { Curve, LineSegment, Polygon, Radians } from "@excalidraw/math";
+import type { Curve, LineSegment, Polygon, Radians } from "../../math";
 import {
   curve,
   lineSegment,
@@ -31,7 +31,7 @@ import {
   vectorScale,
   type GlobalPoint,
   type LocalPoint,
-} from "@excalidraw/math";
+} from "../../math";
 import { getElementAbsoluteCoords } from "@excalidraw/excalidraw/element";
 import type {
   ElementsMap,
