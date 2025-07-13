@@ -8,9 +8,9 @@ import type {
 } from "./types";
 import { getElementBounds } from "./bounds";
 import type { FrameNameBounds } from "../types";
-import type { GeometricShape } from "@excalidraw/utils/geometry/shape";
-import { getPolygonShape } from "@excalidraw/utils/geometry/shape";
-import { isPointInShape, isPointOnShape } from "@excalidraw/utils/collision";
+import type { GeometricShape } from "../../utils/geometry/shape";
+import { getPolygonShape } from "../../utils/geometry/shape";
+import { isPointInShape, isPointOnShape } from "../../utils/collision";
 import { isTransparent } from "../utils";
 import {
   hasBoundTextElement,

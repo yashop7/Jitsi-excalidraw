@@ -40,7 +40,7 @@ import {
   pointRotateRads,
 } from "../../math";
 import type { Mutable } from "../utility-types";
-import { getCurvePathOps } from "@excalidraw/utils/geometry/shape";
+import { getCurvePathOps } from "../../utils/geometry/shape";
 
 export type RectangleBox = {
   x: number;

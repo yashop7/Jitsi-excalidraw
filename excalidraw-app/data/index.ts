@@ -1,33 +1,33 @@
 import {
   compressData,
   decompressData,
-} from "@excalidraw/excalidraw/data/encode";
+} from "@jitsi/excalidraw/data/encode";
 import {
   decryptData,
   generateEncryptionKey,
   IV_LENGTH_BYTES,
-} from "@excalidraw/excalidraw/data/encryption";
-import { serializeAsJSON } from "@excalidraw/excalidraw/data/json";
-import { restore } from "@excalidraw/excalidraw/data/restore";
-import type { ImportedDataState } from "@excalidraw/excalidraw/data/types";
-import type { SceneBounds } from "@excalidraw/excalidraw/element/bounds";
-import { isInvisiblySmallElement } from "@excalidraw/excalidraw/element/sizeHelpers";
-import { isInitializedImageElement } from "@excalidraw/excalidraw/element/typeChecks";
+} from "@jitsi/excalidraw/data/encryption";
+import { serializeAsJSON } from "@jitsi/excalidraw/data/json";
+import { restore } from "@jitsi/excalidraw/data/restore";
+import type { ImportedDataState } from "@jitsi/excalidraw/data/types";
+import type { SceneBounds } from "@jitsi/excalidraw/element/bounds";
+import { isInvisiblySmallElement } from "@jitsi/excalidraw/element/sizeHelpers";
+import { isInitializedImageElement } from "@jitsi/excalidraw/element/typeChecks";
 import type {
   ExcalidrawElement,
   FileId,
   OrderedExcalidrawElement,
-} from "@excalidraw/excalidraw/element/types";
-import { t } from "@excalidraw/excalidraw/i18n";
+} from "@jitsi/excalidraw/element/types";
+import { t } from "@jitsi/excalidraw/i18n";
 import type {
   AppState,
   BinaryFileData,
   BinaryFiles,
   SocketId,
-} from "@excalidraw/excalidraw/types";
-import type { UserIdleState } from "@excalidraw/excalidraw/constants";
-import type { MakeBrand } from "@excalidraw/excalidraw/utility-types";
-import { bytesToHexString } from "@excalidraw/excalidraw/utils";
+} from "@jitsi/excalidraw/types";
+import type { UserIdleState } from "@jitsi/excalidraw/constants";
+import type { MakeBrand } from "@jitsi/excalidraw/utility-types";
+import { bytesToHexString } from "@jitsi/excalidraw/utils";
 import type { WS_SUBTYPES } from "../app_constants";
 import {
   DELETED_ELEMENT_TIMEOUT,

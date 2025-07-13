@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer } from "@excalidraw/excalidraw/index";
+import { Footer } from "@jitsi/excalidraw/index";
 import { EncryptedIcon } from "./EncryptedIcon";
 import { ExcalidrawPlusAppLink } from "./ExcalidrawPlusAppLink";
 import { isExcalidrawPlusSignedUser } from "../app_constants";

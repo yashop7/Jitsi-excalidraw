@@ -4,10 +4,10 @@ import { LocalData } from "./data/LocalData";
 import type {
   FileId,
   OrderedExcalidrawElement,
-} from "@excalidraw/excalidraw/element/types";
-import type { AppState, BinaryFileData } from "@excalidraw/excalidraw/types";
-import { ExcalidrawError } from "@excalidraw/excalidraw/errors";
-import { base64urlToString } from "@excalidraw/excalidraw/data/encode";
+} from "@jitsi/excalidraw/element/types";
+import type { AppState, BinaryFileData } from "@jitsi/excalidraw/types";
+import { ExcalidrawError } from "@jitsi/excalidraw/errors";
+import { base64urlToString } from "@jitsi/excalidraw/data/encode";
 
 const EVENT_REQUEST_SCENE = "REQUEST_SCENE";
 

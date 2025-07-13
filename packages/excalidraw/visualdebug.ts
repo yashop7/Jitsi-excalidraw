@@ -6,7 +6,7 @@ import {
   type GlobalPoint,
   type LocalPoint,
 } from "../math";
-import type { LineSegment } from "@excalidraw/utils";
+import type { LineSegment } from "../utils";
 import type { Bounds } from "./element/bounds";
 import { isBounds } from "./element/typeChecks";
 

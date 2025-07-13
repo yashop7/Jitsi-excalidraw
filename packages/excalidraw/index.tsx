@@ -26,7 +26,7 @@ export {
   exportToBlob,
   exportToSvg,
   exportToClipboard,
-} from "@excalidraw/utils/export";
+} from "../utils/export";
 
 export { serializeAsJSON, serializeLibraryAsJSON } from "./data/json";
 export {
@@ -84,7 +84,7 @@ export {
   elementsOverlappingBBox,
   isElementInsideBBox,
   elementPartiallyOverlapsWithOrContainsBBox,
-} from "@excalidraw/utils/withinBounds";
+} from "../utils/withinBounds";
 
 export { DiagramToCodePlugin } from "./components/DiagramToCodePlugin/DiagramToCodePlugin";
 export { getDataURL } from "./data/blob";
@@ -94,4 +94,6 @@ export { setCustomTextMetricsProvider } from "./element/textMeasurements";
 
 export { Collab , Excalidraw , ExcalidrawApp } from "./collab/index";
 
-export { generateCollaborationLinkData } from "../../excalidraw-app/data/index"
+export { generateCollaborationLinkData } from "../../excalidraw-app/data/index";
+
+export { EditorJotaiProvider, editorJotaiStore } from "./editor-jotai";

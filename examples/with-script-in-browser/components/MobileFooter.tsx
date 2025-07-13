@@ -1,7 +1,7 @@
 import React from "react";
-import type { ExcalidrawImperativeAPI } from "@excalidraw/excalidraw/types";
+import type { ExcalidrawImperativeAPI } from "@jitsi/excalidraw/types";
 import CustomFooter from "./CustomFooter";
-import type * as TExcalidraw from "@excalidraw/excalidraw";
+import type * as TExcalidraw from "@jitsi/excalidraw";
 
 const MobileFooter = ({
   excalidrawAPI,

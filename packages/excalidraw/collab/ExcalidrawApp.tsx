@@ -857,7 +857,7 @@ const ExcalidrawWrapper = (props : ExcalidrawAppProps) => {
         detectScroll={false}
         handleKeyboardGlobally={true}
         autoFocus={true}
-        theme={editorTheme}
+        theme={props.excalidraw.theme || editorTheme}
         renderTopRightUI={(isMobile) => {
           if (isMobile || !collabAPI || isCollabDisabled) {
             return null;

@@ -7,19 +7,19 @@ import { isSyncableElement } from "../data";
 
 import type { TCollabClass } from "./Collab";
 
-import type { OrderedExcalidrawElement } from "@excalidraw/excalidraw/element/types";
+import type { OrderedExcalidrawElement } from "@jitsi/excalidraw/element/types";
 import { WS_EVENTS, FILE_UPLOAD_TIMEOUT, WS_SUBTYPES } from "../app_constants";
 import type {
   OnUserFollowedPayload,
   SocketId,
-} from "@excalidraw/excalidraw/types";
-import type { UserIdleState } from "@excalidraw/excalidraw/constants";
-import { trackEvent } from "@excalidraw/excalidraw/analytics";
+} from "@jitsi/excalidraw/types";
+import type { UserIdleState } from "@jitsi/excalidraw/constants";
+import { trackEvent } from "@jitsi/excalidraw/analytics";
 import throttle from "lodash.throttle";
-import { newElementWith } from "@excalidraw/excalidraw/element/mutateElement";
-import { encryptData } from "@excalidraw/excalidraw/data/encryption";
+import { newElementWith } from "@jitsi/excalidraw/element/mutateElement";
+import { encryptData } from "@jitsi/excalidraw/data/encryption";
 import type { Socket } from "socket.io-client";
-import { CaptureUpdateAction } from "@excalidraw/excalidraw";
+import { CaptureUpdateAction } from "@jitsi/excalidraw";
 
 class Portal {
   collab: TCollabClass;

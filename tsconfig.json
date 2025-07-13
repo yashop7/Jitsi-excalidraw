@@ -19,10 +19,10 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@excalidraw/excalidraw": ["./packages/excalidraw/index.tsx"],
+      "@jitsi/excalidraw": ["./packages/excalidraw/index.tsx"],
       "@excalidraw/utils": ["./packages/utils/index.ts"],
       "@excalidraw/math": ["./packages/math/index.ts"],
-      "@excalidraw/excalidraw/*": ["./packages/excalidraw/*"],
+      "@jitsi/excalidraw/*": ["./packages/excalidraw/*"],
       "@excalidraw/utils/*": ["./packages/utils/*"],
       "@excalidraw/math/*": ["./packages/math/*"]
     }

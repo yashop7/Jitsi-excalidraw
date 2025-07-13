@@ -16,7 +16,7 @@ import {
   getFreedrawShape,
   getPolygonShape,
   type GeometricShape,
-} from "@excalidraw/utils/geometry/shape";
+} from "../utils/geometry/shape";
 import {
   ArrowIcon,
   DiamondIcon,

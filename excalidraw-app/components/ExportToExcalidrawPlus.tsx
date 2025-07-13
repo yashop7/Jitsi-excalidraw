@@ -1,31 +1,31 @@
 import React from "react";
-import { Card } from "@excalidraw/excalidraw/components/Card";
-import { ToolButton } from "@excalidraw/excalidraw/components/ToolButton";
-import { serializeAsJSON } from "@excalidraw/excalidraw/data/json";
+import { Card } from "@jitsi/excalidraw/components/Card";
+import { ToolButton } from "@jitsi/excalidraw/components/ToolButton";
+import { serializeAsJSON } from "@jitsi/excalidraw/data/json";
 import { loadFirebaseStorage, saveFilesToFirebase } from "../data/firebase";
 import type {
   FileId,
   NonDeletedExcalidrawElement,
-} from "@excalidraw/excalidraw/element/types";
+} from "@jitsi/excalidraw/element/types";
 import type {
   AppState,
   BinaryFileData,
   BinaryFiles,
-} from "@excalidraw/excalidraw/types";
+} from "@jitsi/excalidraw/types";
 import { nanoid } from "nanoid";
-import { useI18n } from "@excalidraw/excalidraw/i18n";
+import { useI18n } from "@jitsi/excalidraw/i18n";
 import {
   encryptData,
   generateEncryptionKey,
-} from "@excalidraw/excalidraw/data/encryption";
-import { isInitializedImageElement } from "@excalidraw/excalidraw/element/typeChecks";
+} from "@jitsi/excalidraw/data/encryption";
+import { isInitializedImageElement } from "@jitsi/excalidraw/element/typeChecks";
 import { FILE_UPLOAD_MAX_BYTES } from "../app_constants";
 import { encodeFilesForUpload } from "../data/FileManager";
 import { uploadBytes, ref } from "firebase/storage";
-import { MIME_TYPES } from "@excalidraw/excalidraw/constants";
-import { trackEvent } from "@excalidraw/excalidraw/analytics";
-import { getFrame } from "@excalidraw/excalidraw/utils";
-import { ExcalidrawLogo } from "@excalidraw/excalidraw/components/ExcalidrawLogo";
+import { MIME_TYPES } from "@jitsi/excalidraw/constants";
+import { trackEvent } from "@jitsi/excalidraw/analytics";
+import { getFrame } from "@jitsi/excalidraw/utils";
+import { ExcalidrawLogo } from "@jitsi/excalidraw/components/ExcalidrawLogo";
 
 export const exportToExcalidrawPlus = async (
   elements: readonly NonDeletedExcalidrawElement[],

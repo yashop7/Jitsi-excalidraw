@@ -6,29 +6,29 @@ import type {
   SocketId,
   Collaborator,
   Gesture,
-} from "@excalidraw/excalidraw/types";
-import { ErrorDialog } from "@excalidraw/excalidraw/components/ErrorDialog";
-import { APP_NAME, ENV, EVENT } from "@excalidraw/excalidraw/constants";
-import type { ImportedDataState } from "@excalidraw/excalidraw/data/types";
+} from "@jitsi/excalidraw/types";
+import { ErrorDialog } from "@jitsi/excalidraw/components/ErrorDialog";
+import { APP_NAME, ENV, EVENT } from "@jitsi/excalidraw/constants";
+import type { ImportedDataState } from "@jitsi/excalidraw/data/types";
 import type {
   ExcalidrawElement,
   FileId,
   InitializedExcalidrawImageElement,
   OrderedExcalidrawElement,
-} from "@excalidraw/excalidraw/element/types";
+} from "@jitsi/excalidraw/element/types";
 import {
   CaptureUpdateAction,
   getSceneVersion,
   restoreElements,
   zoomToFitBounds,
   reconcileElements,
-} from "@excalidraw/excalidraw";
+} from "@jitsi/excalidraw";
 import {
   assertNever,
   preventUnload,
   resolvablePromise,
   throttleRAF,
-} from "@excalidraw/excalidraw/utils";
+} from "@jitsi/excalidraw/utils";
 import {
   CURSOR_SYNC_TIMEOUT,
   FILE_UPLOAD_MAX_BYTES,
@@ -60,35 +60,35 @@ import {
   saveUsernameToLocalStorage,
 } from "../data/localStorage";
 import Portal from "./Portal";
-import { t } from "@excalidraw/excalidraw/i18n";
+import { t } from "@jitsi/excalidraw/i18n";
 import {
   IDLE_THRESHOLD,
   ACTIVE_THRESHOLD,
   UserIdleState,
-} from "@excalidraw/excalidraw/constants";
+} from "@jitsi/excalidraw/constants";
 import {
   encodeFilesForUpload,
   FileManager,
   updateStaleImageStatuses,
 } from "../data/FileManager";
-import { AbortError } from "@excalidraw/excalidraw/errors";
+import { AbortError } from "@jitsi/excalidraw/errors";
 import {
   isImageElement,
   isInitializedImageElement,
-} from "@excalidraw/excalidraw/element/typeChecks";
-import { newElementWith } from "@excalidraw/excalidraw/element/mutateElement";
-import { decryptData } from "@excalidraw/excalidraw/data/encryption";
+} from "@jitsi/excalidraw/element/typeChecks";
+import { newElementWith } from "@jitsi/excalidraw/element/mutateElement";
+import { decryptData } from "@jitsi/excalidraw/data/encryption";
 import { resetBrowserStateVersions } from "../data/tabSync";
 import { LocalData } from "../data/LocalData";
 import { appJotaiStore, atom } from "../app-jotai";
-import type { Mutable, ValueOf } from "@excalidraw/excalidraw/utility-types";
-import { getVisibleSceneBounds } from "@excalidraw/excalidraw/element/bounds";
-import { withBatchedUpdates } from "@excalidraw/excalidraw/reactUtils";
+import type { Mutable, ValueOf } from "@jitsi/excalidraw/utility-types";
+import { getVisibleSceneBounds } from "@jitsi/excalidraw/element/bounds";
+import { withBatchedUpdates } from "@jitsi/excalidraw/reactUtils";
 import { collabErrorIndicatorAtom } from "./CollabError";
 import type {
   ReconciledExcalidrawElement,
   RemoteExcalidrawElement,
-} from "@excalidraw/excalidraw/data/reconcile";
+} from "@jitsi/excalidraw/data/reconcile";
 
 export const collabAPIAtom = atom<CollabAPI | null>(null);
 export const isCollaboratingAtom = atom(false);

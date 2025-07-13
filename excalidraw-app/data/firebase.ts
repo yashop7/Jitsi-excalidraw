@@ -1,25 +1,25 @@
-import { reconcileElements } from "@excalidraw/excalidraw";
+import { reconcileElements } from "@jitsi/excalidraw";
 import type {
   ExcalidrawElement,
   FileId,
   OrderedExcalidrawElement,
-} from "@excalidraw/excalidraw/element/types";
-import { getSceneVersion } from "@excalidraw/excalidraw/element";
+} from "@jitsi/excalidraw/element/types";
+import { getSceneVersion } from "@jitsi/excalidraw/element";
 import type Portal from "../collab/Portal";
-import { restoreElements } from "@excalidraw/excalidraw/data/restore";
+import { restoreElements } from "@jitsi/excalidraw/data/restore";
 import type {
   AppState,
   BinaryFileData,
   BinaryFileMetadata,
   DataURL,
-} from "@excalidraw/excalidraw/types";
+} from "@jitsi/excalidraw/types";
 import { FILE_CACHE_MAX_AGE_SEC } from "../app_constants";
-import { decompressData } from "@excalidraw/excalidraw/data/encode";
+import { decompressData } from "@jitsi/excalidraw/data/encode";
 import {
   encryptData,
   decryptData,
-} from "@excalidraw/excalidraw/data/encryption";
-import { MIME_TYPES } from "@excalidraw/excalidraw/constants";
+} from "@jitsi/excalidraw/data/encryption";
+import { MIME_TYPES } from "@jitsi/excalidraw/constants";
 import type { SyncableExcalidrawElement } from ".";
 import { getSyncableElements } from ".";
 import { initializeApp } from "firebase/app";
@@ -32,7 +32,7 @@ import {
 } from "firebase/firestore";
 import { getStorage, ref, uploadBytes } from "firebase/storage";
 import type { Socket } from "socket.io-client";
-import type { RemoteExcalidrawElement } from "@excalidraw/excalidraw/data/reconcile";
+import type { RemoteExcalidrawElement } from "@jitsi/excalidraw/data/reconcile";
 
 // private
 // -----------------------------------------------------------------------------

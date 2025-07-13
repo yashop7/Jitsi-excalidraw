@@ -30,18 +30,18 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "@excalidraw/excalidraw",
+      label: "@jitsi/excalidraw",
       collapsed: false,
       items: [
-        "@excalidraw/excalidraw/installation",
-        "@excalidraw/excalidraw/integration",
-        "@excalidraw/excalidraw/customizing-styles",
+        "@jitsi/excalidraw/installation",
+        "@jitsi/excalidraw/integration",
+        "@jitsi/excalidraw/customizing-styles",
         {
           type: "category",
           label: "API",
           link: {
             type: "doc",
-            id: "@excalidraw/excalidraw/api/api-intro",
+            id: "@jitsi/excalidraw/api/api-intro",
           },
           items: [
             {
@@ -49,13 +49,13 @@ const sidebars = {
               label: "Props",
               link: {
                 type: "doc",
-                id: "@excalidraw/excalidraw/api/props/props",
+                id: "@jitsi/excalidraw/api/props/props",
               },
               items: [
-                "@excalidraw/excalidraw/api/props/initialdata",
-                "@excalidraw/excalidraw/api/props/excalidraw-api",
-                "@excalidraw/excalidraw/api/props/render-props",
-                "@excalidraw/excalidraw/api/props/ui-options",
+                "@jitsi/excalidraw/api/props/initialdata",
+                "@jitsi/excalidraw/api/props/excalidraw-api",
+                "@jitsi/excalidraw/api/props/render-props",
+                "@jitsi/excalidraw/api/props/ui-options",
               ],
             },
             {
@@ -63,14 +63,14 @@ const sidebars = {
               label: "Children Components",
               link: {
                 type: "doc",
-                id: "@excalidraw/excalidraw/api/children-components/children-components-intro",
+                id: "@jitsi/excalidraw/api/children-components/children-components-intro",
               },
               items: [
-                "@excalidraw/excalidraw/api/children-components/main-menu",
-                "@excalidraw/excalidraw/api/children-components/welcome-screen",
-                "@excalidraw/excalidraw/api/children-components/sidebar",
-                "@excalidraw/excalidraw/api/children-components/footer",
-                "@excalidraw/excalidraw/api/children-components/live-collaboration-trigger",
+                "@jitsi/excalidraw/api/children-components/main-menu",
+                "@jitsi/excalidraw/api/children-components/welcome-screen",
+                "@jitsi/excalidraw/api/children-components/sidebar",
+                "@jitsi/excalidraw/api/children-components/footer",
+                "@jitsi/excalidraw/api/children-components/live-collaboration-trigger",
               ],
             },
             {
@@ -78,19 +78,19 @@ const sidebars = {
               label: "Utils",
               link: {
                 type: "doc",
-                id: "@excalidraw/excalidraw/api/utils/utils-intro",
+                id: "@jitsi/excalidraw/api/utils/utils-intro",
               },
               items: [
-                "@excalidraw/excalidraw/api/utils/export",
-                "@excalidraw/excalidraw/api/utils/restore",
+                "@jitsi/excalidraw/api/utils/export",
+                "@jitsi/excalidraw/api/utils/restore",
               ],
             },
-            "@excalidraw/excalidraw/api/constants",
-            "@excalidraw/excalidraw/api/excalidraw-element-skeleton",
+            "@jitsi/excalidraw/api/constants",
+            "@jitsi/excalidraw/api/excalidraw-element-skeleton",
           ],
         },
-        "@excalidraw/excalidraw/faq",
-        "@excalidraw/excalidraw/development",
+        "@jitsi/excalidraw/faq",
+        "@jitsi/excalidraw/development",
       ],
     },
     {

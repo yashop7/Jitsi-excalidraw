@@ -32,7 +32,7 @@ import {
   type GlobalPoint,
   type LocalPoint,
 } from "../../math";
-import { getElementAbsoluteCoords } from "@excalidraw/excalidraw/element";
+import { getElementAbsoluteCoords } from "@jitsi/excalidraw/element";
 import type {
   ElementsMap,
   ExcalidrawBindableElement,
@@ -48,10 +48,10 @@ import type {
   ExcalidrawRectangleElement,
   ExcalidrawSelectionElement,
   ExcalidrawTextElement,
-} from "@excalidraw/excalidraw/element/types";
+} from "@jitsi/excalidraw/element/types";
 import { pointsOnBezierCurves } from "points-on-curve";
 import type { Drawable, Op } from "roughjs/bin/core";
-import { invariant } from "@excalidraw/excalidraw/utils";
+import { invariant } from "@jitsi/excalidraw/utils";
 
 // a polyline (made up term here) is a line consisting of other line segments
 // this corresponds to a straight line element in the editor but it could also

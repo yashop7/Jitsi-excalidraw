@@ -12,10 +12,10 @@
     "jsx": "react-jsx",
     "emitDeclarationOnly": true,
     "paths": {
-      "@excalidraw/excalidraw": ["../excalidraw/index.tsx"],
+      "@jitsi/excalidraw": ["../excalidraw/index.tsx"],
       "@excalidraw/utils": ["../utils/index.ts"],
       "@excalidraw/math": ["../math/index.ts"],
-      "@excalidraw/excalidraw/*": ["../excalidraw/*"],
+      "@jitsi/excalidraw/*": ["../excalidraw/*"],
       "@excalidraw/utils/*": ["../utils/*"],
       "@excalidraw/math/*": ["../math/*"]
     }

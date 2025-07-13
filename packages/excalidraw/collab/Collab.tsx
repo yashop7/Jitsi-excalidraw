@@ -245,7 +245,7 @@ class Collab extends PureComponent<ExcalidrawCollabProps, CollabState> {
 
     appJotaiStore.set(collabAPIAtom, collabAPI);
 
-    if (isUsingTestingEnv) {
+    if (this.props.useTestEnv) {
       window.collab = window.collab || ({} as Window["collab"]);
       Object.defineProperties(window, {
         collab: {
@@ -298,8 +298,9 @@ class Collab extends PureComponent<ExcalidrawCollabProps, CollabState> {
 
     if (
       this.isCollaborating() &&
-      (this.fileManager.shouldPreventUnload(syncableElements) ||
-        !isSavedToFirebase(this.portal, syncableElements))
+      (this.fileManager.shouldPreventUnload(syncableElements) 
+      // || !isSavedToFirebase(this.portal, syncableElements)
+      )
     ) {
       // this won't run in time if user decides to leave the site, but
       //  the purpose is to run in immediately after user decides to stay

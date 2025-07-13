@@ -29,7 +29,7 @@ import { getElementLineSegments } from "./element/bounds";
 import {
   doLineSegmentsIntersect,
   elementsOverlappingBBox,
-} from "@excalidraw/utils";
+} from "../utils";
 import { isFrameElement, isFrameLikeElement } from "./element/typeChecks";
 import type { ReadonlySetLike } from "./utility-types";
 import { isPointWithinBounds, pointFrom } from "../math";

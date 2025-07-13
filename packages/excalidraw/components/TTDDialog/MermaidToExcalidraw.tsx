@@ -1,4 +1,5 @@
-import { useState, useRef, useEffect, useDeferredValue } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useDeferredValue } from "../../hooks/useDeferredValue";
 import type { BinaryFiles } from "../../types";
 import { useApp } from "../App";
 import type { NonDeletedExcalidrawElement } from "../../element/types";

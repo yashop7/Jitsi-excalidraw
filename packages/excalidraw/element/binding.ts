@@ -23,7 +23,7 @@ import {
   doBoundsIntersect,
 } from "./bounds";
 import type { AppState } from "../types";
-import { isPointOnShape } from "@excalidraw/utils/collision";
+import { isPointOnShape } from "../../utils/collision";
 import {
   isArrowElement,
   isBindableElement,

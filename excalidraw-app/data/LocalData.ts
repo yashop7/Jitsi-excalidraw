@@ -19,25 +19,25 @@ import {
   setMany,
   get,
 } from "idb-keyval";
-import { clearAppStateForLocalStorage } from "@excalidraw/excalidraw/appState";
+import { clearAppStateForLocalStorage } from "@jitsi/excalidraw/appState";
 import {
   CANVAS_SEARCH_TAB,
   DEFAULT_SIDEBAR,
-} from "@excalidraw/excalidraw/constants";
-import type { LibraryPersistedData } from "@excalidraw/excalidraw/data/library";
-import type { ImportedDataState } from "@excalidraw/excalidraw/data/types";
-import { clearElementsForLocalStorage } from "@excalidraw/excalidraw/element";
+} from "@jitsi/excalidraw/constants";
+import type { LibraryPersistedData } from "@jitsi/excalidraw/data/library";
+import type { ImportedDataState } from "@jitsi/excalidraw/data/types";
+import { clearElementsForLocalStorage } from "@jitsi/excalidraw/element";
 import type {
   ExcalidrawElement,
   FileId,
-} from "@excalidraw/excalidraw/element/types";
+} from "@jitsi/excalidraw/element/types";
 import type {
   AppState,
   BinaryFileData,
   BinaryFiles,
-} from "@excalidraw/excalidraw/types";
-import type { MaybePromise } from "@excalidraw/excalidraw/utility-types";
-import { debounce } from "@excalidraw/excalidraw/utils";
+} from "@jitsi/excalidraw/types";
+import type { MaybePromise } from "@jitsi/excalidraw/utility-types";
+import { debounce } from "@jitsi/excalidraw/utils";
 import { SAVE_TO_LOCAL_STORAGE_TIMEOUT, STORAGE_KEYS } from "../app_constants";
 import { FileManager } from "./FileManager";
 import { Locker } from "./Locker";

@@ -1,6 +1,6 @@
 import React from "react";
-import type * as TExcalidraw from "@excalidraw/excalidraw";
-import type { ExcalidrawImperativeAPI } from "@excalidraw/excalidraw/types";
+import type * as TExcalidraw from "@jitsi/excalidraw";
+import type { ExcalidrawImperativeAPI } from "@jitsi/excalidraw/types";
 
 const COMMENT_SVG = (
   <svg

@@ -63,7 +63,7 @@ import {
 } from "../shapes";
 import { getGridPoint } from "../snapping";
 import { headingIsHorizontal, vectorToHeading } from "./heading";
-import { getCurvePathOps } from "@excalidraw/utils/geometry/shape";
+import { getCurvePathOps } from "../../utils/geometry/shape";
 
 const editorMidPointsCache: {
   version: number | null;

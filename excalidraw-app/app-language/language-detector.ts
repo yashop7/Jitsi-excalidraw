@@ -1,5 +1,5 @@
 import LanguageDetector from "i18next-browser-languagedetector";
-import { defaultLang, languages } from "@excalidraw/excalidraw";
+import { defaultLang, languages } from "@jitsi/excalidraw";
 
 export const languageDetector = new LanguageDetector();
 

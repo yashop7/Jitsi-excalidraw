@@ -8,7 +8,7 @@ import React, {
 } from "react";
 import ExampleSidebar from "./sidebar/ExampleSidebar";
 
-import type * as TExcalidraw from "@excalidraw/excalidraw";
+import type * as TExcalidraw from "@jitsi/excalidraw";
 
 import { nanoid } from "nanoid";
 
@@ -33,12 +33,12 @@ import type {
   Gesture,
   LibraryItems,
   PointerDownState as ExcalidrawPointerDownState,
-} from "@excalidraw/excalidraw/types";
+} from "@jitsi/excalidraw/types";
 import type {
   NonDeletedExcalidrawElement,
   Theme,
-} from "@excalidraw/excalidraw/element/types";
-import type { ImportedLibraryData } from "@excalidraw/excalidraw/data/types";
+} from "@jitsi/excalidraw/element/types";
+import type { ImportedLibraryData } from "@jitsi/excalidraw/data/types";
 
 import "./ExampleApp.scss";
 

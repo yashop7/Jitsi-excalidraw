@@ -22,7 +22,7 @@ const publish = () => {
     core.setOutput(
       "result",
       `**Preview version has been shipped** :rocket:
-    You can use [@excalidraw/excalidraw@${pkg.version}](https://www.npmjs.com/package/@excalidraw/excalidraw/v/${pkg.version}) for testing!`,
+    You can use [@jitsi/excalidraw@${pkg.version}](https://www.npmjs.com/package/@jitsi/excalidraw/v/${pkg.version}) for testing!`,
     );
   } catch (error) {
     core.setOutput("result", "package couldn't be published :warning:!");

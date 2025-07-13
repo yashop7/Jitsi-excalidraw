@@ -3,17 +3,17 @@ import type {
   ExcalidrawFreeDrawElement,
   ExcalidrawLinearElement,
   NonDeletedExcalidrawElement,
-} from "@excalidraw/excalidraw/element/types";
+} from "@jitsi/excalidraw/element/types";
 import {
   isArrowElement,
   isExcalidrawElement,
   isFreeDrawElement,
   isLinearElement,
   isTextElement,
-} from "@excalidraw/excalidraw/element/typeChecks";
-import type { Bounds } from "@excalidraw/excalidraw/element/bounds";
-import { getElementBounds } from "@excalidraw/excalidraw/element/bounds";
-import { arrayToMap } from "@excalidraw/excalidraw/utils";
+} from "@jitsi/excalidraw/element/typeChecks";
+import type { Bounds } from "@jitsi/excalidraw/element/bounds";
+import { getElementBounds } from "@jitsi/excalidraw/element/bounds";
+import { arrayToMap } from "@jitsi/excalidraw/utils";
 import type { LocalPoint } from "../math";
 import {
   rangeIncludesValue,

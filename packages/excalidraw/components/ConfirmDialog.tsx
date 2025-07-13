@@ -1,4 +1,4 @@
-import { flushSync } from "react-dom";
+import { flushSync } from "../hooks/useFlushSync";
 import { t } from "../i18n";
 import type { DialogProps } from "./Dialog";
 import { Dialog } from "./Dialog";

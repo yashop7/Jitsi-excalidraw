@@ -24,9 +24,13 @@ const getConfig = (outdir) => ({
   plugins: [sassPlugin()],
   target: "es2020",
   assetNames: "[dir]/[name]",
+  external: [
+    "react",
+    "react-dom",
+  ],
   chunkNames: "[dir]/[name]-[hash]",
   alias: {
-    "@excalidraw/excalidraw": path.resolve(__dirname, "../packages/excalidraw"),
+    "@jitsi/excalidraw": path.resolve(__dirname, "../packages/excalidraw"),
     "@excalidraw/utils": path.resolve(__dirname, "../packages/utils"),
     "@excalidraw/math": path.resolve(__dirname, "../packages/math"),
   },

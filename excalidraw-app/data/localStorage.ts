@@ -1,10 +1,10 @@
-import type { ExcalidrawElement } from "@excalidraw/excalidraw/element/types";
-import type { AppState } from "@excalidraw/excalidraw/types";
+import type { ExcalidrawElement } from "@jitsi/excalidraw/element/types";
+import type { AppState } from "@jitsi/excalidraw/types";
 import {
   clearAppStateForLocalStorage,
   getDefaultAppState,
-} from "@excalidraw/excalidraw/appState";
-import { clearElementsForLocalStorage } from "@excalidraw/excalidraw/element";
+} from "@jitsi/excalidraw/appState";
+import { clearElementsForLocalStorage } from "@jitsi/excalidraw/element";
 import { STORAGE_KEYS } from "../app_constants";
 
 export const saveUsernameToLocalStorage = (username: string) => {
