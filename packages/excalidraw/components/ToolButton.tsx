@@ -51,6 +51,7 @@ type ToolButtonProps =
   | (ToolButtonBaseProps & {
       type: "radio";
       checked: boolean;
+      disableShortcuts?: boolean;
       onChange?(data: { pointerType: PointerType | null }): void;
       onPointerDown?(data: { pointerType: PointerType }): void;
     });

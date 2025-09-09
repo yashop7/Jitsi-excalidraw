@@ -292,6 +292,10 @@ const LayerUI = ({
 
                             <ShapesSwitcher
                               appState={appState}
+                              allowedShapes={UIOptions.canvasActions.allowedShapes}
+                              disableShortcuts={
+                                UIOptions.canvasActions.disableShortcuts
+                              }
                               activeTool={appState.activeTool}
                               UIOptions={UIOptions}
                               app={app}
@@ -516,6 +520,7 @@ const LayerUI = ({
           device={device}
           renderWelcomeScreen={renderWelcomeScreen}
           UIOptions={UIOptions}
+          allowedShapes={UIOptions.canvasActions.allowedShapes}
         />
       )}
       {!device.editor.isMobile && (
@@ -537,6 +542,7 @@ const LayerUI = ({
               actionManager={actionManager}
               showExitZenModeBtn={showExitZenModeBtn}
               renderWelcomeScreen={renderWelcomeScreen}
+              UIOptions={UIOptions}
             />
             {appState.scrolledOutside && (
               <button

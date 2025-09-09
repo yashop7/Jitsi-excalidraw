@@ -43,6 +43,8 @@ type MobileMenuProps = {
   ) => JSX.Element | null;
   renderCustomStats?: ExcalidrawProps["renderCustomStats"];
   renderSidebars: () => JSX.Element | null;
+  allowedShapes: Array<String>;
+  disableShortcuts?: boolean;
   device: Device;
   renderWelcomeScreen: boolean;
   UIOptions: AppProps["UIOptions"];
@@ -61,6 +63,8 @@ export const MobileMenu = ({
   renderTopRightUI,
   renderCustomStats,
   renderSidebars,
+  allowedShapes,
+  disableShortcuts,
   device,
   renderWelcomeScreen,
   UIOptions,
@@ -85,6 +89,8 @@ export const MobileMenu = ({
                     <ShapesSwitcher
                       appState={appState}
                       activeTool={appState.activeTool}
+                      allowedShapes={allowedShapes}
+                      disableShortcuts={disableShortcuts}
                       UIOptions={UIOptions}
                       app={app}
                     />

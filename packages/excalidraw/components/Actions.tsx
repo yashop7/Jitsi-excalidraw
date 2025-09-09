@@ -271,12 +271,17 @@ export const ShapesSwitcher = ({
   appState,
   app,
   UIOptions,
+  allowedShapes,
+  disableShortcuts
 }: {
   activeTool: UIAppState["activeTool"];
   appState: UIAppState;
   app: AppClassProperties;
   UIOptions: AppProps["UIOptions"];
+  allowedShapes: Array<String>;
+  disableShortcuts?: boolean;
 }) => {
+  console.log("allowedShapes: ", allowedShapes);
   const [isExtraToolsMenuOpen, setIsExtraToolsMenuOpen] = useState(false);
 
   const frameToolSelected = activeTool.type === "frame";
@@ -287,7 +292,9 @@ export const ShapesSwitcher = ({
 
   return (
     <>
-      {SHAPES.map(({ value, icon, key, numericKey, fillable }, index) => {
+      {SHAPES.filter(
+      (shape) => allowedShapes.includes(shape.value),
+    ).map(({ value, icon, key, numericKey, fillable }, index) => {
         if (
           UIOptions.tools?.[
             value as Extract<typeof value, keyof AppProps["UIOptions"]["tools"]>
@@ -311,6 +318,7 @@ export const ShapesSwitcher = ({
             checked={activeTool.type === value}
             name="editor-current-shape"
             title={`${capitalizeString(label)} — ${shortcut}`}
+            disableShortcuts={disableShortcuts}
             keyBindingLabel={numericKey || letter}
             aria-label={capitalizeString(label)}
             aria-keyshortcuts={shortcut}
